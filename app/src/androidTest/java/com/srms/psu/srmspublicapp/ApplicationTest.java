@@ -1,4 +1,4 @@
-package com.srms.psu.srmsclientapp;
+package com.srms.psu.srmspublicapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

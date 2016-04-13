@@ -1,5 +1,11 @@
 <resources>
-    <string name="app_name">SRMSClientApp</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">SRMS Public App</string>
+    <string name="prompt">You need to register your device first. Here\'s your Device ID :</string>
     <string name="action_settings">Settings</string>
+    <string name="web_service_url">http://192.168.88.100:8080/web/srmsservice</string>
+    <string name="mdrmmc_hotline">tel:123456789</string>
+
+    <string name="title_activity_prompt">Register Your Device</string>
+    <string name="title_activity_register_device">SRMS Public App</string>
+    <string name="dummy_content">DEVICE ID HERE</string>
 </resources>

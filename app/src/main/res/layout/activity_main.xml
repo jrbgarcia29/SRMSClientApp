@@ -6,20 +6,57 @@
         android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.MapFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/frameLayoutAdvisory"
+        android:background="#CC1A237E"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Message Advisory from server displays here if advisory is on from admin"
+            android:id="@+id/tvAdvisory"
+            android:textColor="#ffffff"
+            android:layout_margin="15dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <ImageButton
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgBtnCall"
+            android:layout_gravity="left|bottom"
+            android:src="@mipmap/btn_call"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:layout_width="185dp"
+            android:layout_height="60dp"
+            android:id="@+id/imgBtnRequest"
+            android:layout_gravity="right|bottom"
+            android:src="@mipmap/btn_rescue_request"
+            android:scaleType="fitXY" />
+    </FrameLayout>
+
+    <android.support.v7.internal.widget.ContentFrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
